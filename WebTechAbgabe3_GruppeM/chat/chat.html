@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="chat.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="chatTitle"></h1>
+        <a href="../friends/friends.html">
+            &lt; Back</a> | <a href="../profile/profile.html"> Profile</a> | <a href="../friends/friends.html" class="remove-friend">Remove
+            Friend</a>
+        <hr>
+        <fieldset>
+            <ul id="chatBox" class="list">
+            </ul>
+        </fieldset>
+        <hr>
+            <p class="barplusbutton">
+                <input type="text" id="newMessage" name="new message" placeholder="New Message" size="17">
+                <button type="button" onclick="sendMessage();">Send</button>
+            </p>
+    </div>
+</body>
+
+</html>

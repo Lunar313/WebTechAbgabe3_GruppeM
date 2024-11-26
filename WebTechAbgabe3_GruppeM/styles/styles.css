@@ -1,0 +1,340 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.friendAcceptButtons {
+    align-self: flex-end;
+}
+
+#friendsRequestedList {
+    flex: 1;
+}
+
+.friendsRequestedItem {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.barplusbutton {
+    display: flex;
+    align-items: center;
+}
+
+.barplusbutton button {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.labelplusfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 10px 0;
+    color: #444;
+}
+
+.labelplusfield label {
+    width: 30%;
+    margin-right: 10px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.labelplusfield input[type="text"],
+.labelplusfield input[type="password"],
+.labelplusfield select {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2980b9;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ccc;
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+}
+
+button:not([type="submit"]):hover {
+    background-color: darkgrey;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+a.remove-friend {
+    color: red;
+    font-weight: bold;
+}
+
+a.remove-friend:hover {
+    color: darkred;
+    text-shadow: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    margin-right: 20px;
+    max-width: 450px;
+    height: auto;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.friends-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list li:last-child {
+    margin-bottom: 0;
+}
+
+.notification {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    line-height: 1;
+}
+
+.timer {
+    color: lightgray;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+        margin: 5px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .labelplusfield {
+        flex-direction: row;
+        line-height: 1.6;
+        font-size: 1em;
+        margin: 10px 0;
+        color: #444;
+    }
+
+    .labelplusfield label {
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        text-align: right;
+    }
+
+    .labelplusfield input[type="text"],
+    .labelplusfield input[type="password"],
+    .labelplusfield select {
+        width: 100%;
+        margin: 0;
+    }
+
+    .barplusbutton {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 10px;
+    }
+
+    .request-item {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        max-width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .barplusbutton button {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        margin: auto;
+    }
+
+    .barplusbutton button+button {
+        margin-top: 10px;
+    }
+}

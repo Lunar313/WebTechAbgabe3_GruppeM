@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <script src="friends.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Friends</h1>
+        <a href="../authentication/login.html">
+            &lt; Logout</a> | <a href="../settings/settings.html"> Settings</a>
+        <hr>
+        <fieldset>
+            <ul id="friendsList" class="list">
+            </ul>
+        </fieldset>
+
+        <hr>
+
+        <h2>New Request</h2>
+
+        <div class="barplusbutton">
+            <ol id="friendsRequestedList">
+            </ol>
+        </div>
+
+
+        <hr>
+
+        <form action="../friends/friends.html">
+            <p class="barplusbutton">
+                <input type="text" id="add friend to list" name="add friend to list" placeholder="Add Friend to List"
+                    size="17">
+                <button type="button">Add</button>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
